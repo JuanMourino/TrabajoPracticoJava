@@ -69,6 +69,16 @@ public class Main {
         }
         return maximo;
     }
+     private Tecnico masIncidentesEspecialidad(int IdEspecialidad){
+        Tecnico maximo = tecnicos[0].especialidades[IdEspecialidad];
+        for (int i = 1;i<tecnicos.length;i++){
+            if (maximo.incidentesResueltos < tecnicos[i].especialidades[IdEspecialidad].incidentesResueltos{
+                maximo = tecnicos[i].especialidades[IdEspecialidad];
+            }
+        }
+        return maximo;
+    }
+
 
 
 
